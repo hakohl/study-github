@@ -5,9 +5,12 @@ jobs:
   list-branches:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v3
+      - name: checkout repo
+        uses: actions/checkout@v3
+      - name: setup python
+        uses: actions/setup-python@v3
         with:
           python-version: "3.10"
-      - run: ./.github/scripts/ListBranches.py
-        shell: bash
+      - name: run python script
+        run: |
+          python ./.github/scripts/ListBranches.py
