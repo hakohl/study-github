@@ -1,3 +1,18 @@
 # list branches in a GitHub repo per Python script
 
-name: List branches
+name: list-branches
+on: push
+
+jobs:
+    list-branches:
+        runs-on: ubuntu-latest
+        steps:
+            - uses : actions/checkout@v3
+            - name: Set up Python 3.10
+            uses: actions/setup-python@v3
+                with:
+                    python-version: "3.10"
+            - name: run Python script
+                run: ./.github/scripts/ListBranches.py
+                shell: bash
+
