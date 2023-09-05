@@ -10,6 +10,7 @@ on:
     branches: [ "main" ]
 
 jobs:
+  # CI demo
   build:
 
     runs-on: ubuntu-latest
