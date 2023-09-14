@@ -1,0 +1,14 @@
+name: List workflows (GitHub Script)
+
+on:
+  workflow_dispatch:
+    
+jobs:
+  list-workflows:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v6
+      
+
+
+
