@@ -1,0 +1,9 @@
+name: List workflows (GitHub CLI)
+
+on: workflow_dispatch
+
+jobs:
+  list-workflows:
+    runs-on: ubuntu-latest
+    steps:
+      - run: gh workflow list
