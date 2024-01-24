@@ -1,5 +1,6 @@
 # workflow for unserstanding GitHub actions
 
+name: understanding-github-actions
 on: push
 jobs:
   learn-job:
