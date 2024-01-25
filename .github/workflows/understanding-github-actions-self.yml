@@ -1,0 +1,8 @@
+# workflow for unserstanding Git
+
+name: understanding-github-actio
+run-name: ${{ github.actor }} le
+on: push
+jobs:
+  learn-job:
+    runs-on: ubuntu-latest
