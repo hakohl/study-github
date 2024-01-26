@@ -1,5 +1,6 @@
 {
     "recommendations": [
-        "me-dutour-mathieu.vscode-github-actions"
+        "me-dutour-mathieu.vscode-github-actions",
+        "github.vscode-github-actions"
     ]
 }
