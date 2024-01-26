@@ -6,6 +6,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: | 
-          echo ${{github.workflow}}
-          echo ${{job.status}}
+          echo ${{ github.workflow }}
+          echo ${{ job.status }}
 
