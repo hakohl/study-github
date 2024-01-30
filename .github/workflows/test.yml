@@ -9,4 +9,4 @@ jobs:
           echo ${{ github.workflow }}
           echo ${{ job.status }}
         if: ${{ contains(job.status, 'succ') }}
-          echo ok
+      - run: echo ok
