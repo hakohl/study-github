@@ -5,6 +5,7 @@ name: list-repos-cli
 on: workflow_dispatch
 env:
   GH_TOKEN: ${{ github.token }}
+permissions: read-all
 
 jobs:
   list-repos:
