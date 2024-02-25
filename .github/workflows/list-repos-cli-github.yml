@@ -1,0 +1,11 @@
+# list all repositories using CLI
+
+name: list-repos-cli
+
+on: workflow_dispatch
+
+jobs:
+  list-repos:
+    runs-on: ubuntu-latest
+    steps:
+      - run: gh repo list
