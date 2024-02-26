@@ -11,4 +11,4 @@ jobs:
   list-repos:
     runs-on: ubuntu-latest
     steps:
-      - run: gh repo list --all
+      - run: gh repo list
