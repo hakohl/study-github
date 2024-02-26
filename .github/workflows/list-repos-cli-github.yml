@@ -10,4 +10,6 @@ jobs:
   list-repos:
     runs-on: ubuntu-latest
     steps:
-      - run: gh repo list
+      - run: |
+          gh repo list
+          gh workflow list --all
