@@ -10,6 +10,7 @@ jobs:
   list-repos:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
       - run: |
           gh repo list
           gh workflow list --all
