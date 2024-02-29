@@ -12,4 +12,4 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: |
-          gh workflow list --all
+          gh workflow list --all > workflow_list.txt
