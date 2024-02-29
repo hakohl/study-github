@@ -1,4 +1,3 @@
-# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
 # workflow for unserstanding Git
 
 name: understanding-github-actions
@@ -8,4 +7,4 @@ jobs:
   learn-job:
     runs-on: ubuntu-latest
     steps:
-      - run: echo ${{ github.}}
+      - run: echo ${{ github.runner }}
