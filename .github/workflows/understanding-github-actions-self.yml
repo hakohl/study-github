@@ -1,11 +1,10 @@
-# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
 # workflow for unserstanding Git
 
-name: understanding-github-actio
-run-name: ${{ github.actor }} learn about GitHub actions on a runner ${{ github. }}
+name: understanding-github-action
+run-name: ${{ github.actor }} learn about GitHub actions on a runner ${{ github.runner }}
 on: push
 jobs:
   learn-job:
     runs-on: ubuntu-latest
     steps:
-      - run: echo ${{ github.}}
+      - run: echo ${{ github.runner }}
