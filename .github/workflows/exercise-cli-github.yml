@@ -1,15 +1,15 @@
-# list all repositories using CLI
+# make some exercises using CLI
 
-name: list-repos-cli
+name: exercise-cli-github 
 
 on: workflow_dispatch
 env:
   GH_TOKEN: ${{ github.token }}
 
 jobs:
-  list-repos:
+  exercises-with-workflows:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      #- uses: actions/checkout@v4
       - run: |
           gh workflow list --all
