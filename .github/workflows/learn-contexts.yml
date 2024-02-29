@@ -1,4 +1,4 @@
-name: Context testing
+name: Context-testing
 on: workflow_dispatch
 
 jobs:

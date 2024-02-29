@@ -1,4 +1,4 @@
-name: List workflows (GitHub Script)
+name: List-workflows-(GitHub Script)
 
 on:
   workflow_dispatch:

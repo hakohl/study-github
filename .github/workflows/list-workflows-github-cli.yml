@@ -1,4 +1,4 @@
-name: List workflows (GitHub CLI)
+name: List-workflows-(GitHub CLI)
 
 on: workflow_dispatch
 

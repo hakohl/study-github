@@ -1,4 +1,4 @@
-name: Test workflow
+name: test-workflow
 run-name: Das ist ein Testworkflow von ${{ github.actor }}
 on: push
 jobs:

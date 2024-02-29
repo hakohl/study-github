@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
 # workflow for unserstanding Git
 
-name: understanding-github-actio
+name: understanding-github-actions
 run-name: ${{ github.actor }} learn about GitHub actions on a runner ${{ github. }}
 on: push
 jobs:
