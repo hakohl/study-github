@@ -39,7 +39,7 @@ jobs:
         #run: |
           #bash ./.github/scripts/filter_active_workflows.sh
           #echo "${active_workflows[@]}" >> "$GITHUB_ENV"
-      - name: xxx
+      #- name: xxx
         #env:
           #ACTIVE_WORKFLOWS: ${active_workflows[@]}
         #run: echo "${active_workflows[@]}"
