@@ -4,7 +4,7 @@
 cd ./.github/scripts || exit 1
 
 active_workflows=()
-#export "${active_workflows[@]}"
+export "${active_workflows[@]}"
 
 while read name state id; do
     if [[ $name == "exercise-cli-github" ]]; then

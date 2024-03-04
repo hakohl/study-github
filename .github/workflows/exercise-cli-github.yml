@@ -23,4 +23,6 @@ jobs:
       - name: Determine active workflows
         run: bash ./.github/scripts/filter_active_workflows.sh
       - name: xxx
-        run: echo "${active_workflows[@]}"
+        env:
+          ACTIVE_WORKFLOWS: ${active_workflows[@]}
+        run: echo "$ACTIVE_WORKFLOWS"
