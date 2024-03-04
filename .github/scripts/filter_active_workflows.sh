@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 # filter active workflows in a repository
 
 cd ./.github/scripts || exit 1
