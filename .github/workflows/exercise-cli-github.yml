@@ -22,10 +22,7 @@ jobs:
           path: workflow_list.txt
       - name: Determine active workflows
         run: |
-          cd ./.github/scripts || exit 1
-
           active_workflows=()
-          #export "${active_workflows[@]}"
 
           while read name state id; do
               if [[ $name == "exercise-cli-github" ]]; then
@@ -37,10 +34,11 @@ jobs:
               fi
           done < workflow_list.txt
 
-          echo "${active_workflows[@]}"
+          #export "${active_workflows[@]}"
+          echo "${active_workflows[@]}" >> "$GITHUB_ENV"
       - name: List active workflows
         run: |
-          echo xxx
+          echo echo "${active_workflows[@]}"
         #run: |
           #bash ./.github/scripts/filter_active_workflows.sh
           #echo "${active_workflows[@]}" >> "$GITHUB_ENV"
