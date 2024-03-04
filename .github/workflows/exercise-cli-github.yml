@@ -38,13 +38,13 @@ jobs:
       - name: List active workflows
         run: |
           echo "${{ steps.determine-active-workflows.outputs.ACTIVE_WORKFLOWS }}"
-          for workflow in ("${{ steps.determine-active-workflows.outputs.ACTIVE_WORKFLOWS }}"); do
-            echo $workflow
-          done
-        #run: |
-          #bash ./.github/scripts/filter_active_workflows.sh
-          #echo "${active_workflows[@]}" >> "$GITHUB_ENV"
-      #- name: xxx
-        #env:
-          #ACTIVE_WORKFLOWS: ${active_workflows[@]}
-        #run: echo "${active_workflows[@]}"
+          #for workflow in "${{ steps.determine-active-workflows.outputs.ACTIVE_WORKFLOWS }}"; do
+          #  echo $workflow
+          #done
+
+
+
+
+
+
+
