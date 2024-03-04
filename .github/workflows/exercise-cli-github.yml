@@ -10,11 +10,17 @@ jobs:
   exercises-with-workflows:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - run: |
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Determine workflow list
+        run: |
           gh workflow list --all > workflow_list.txt
-      - uses: actions/upload-artifact@v4
-        name: Upload workflow list file
+      - name: Upload workflow list file
+        uses: actions/upload-artifact@v4
         with:
           name: workflow-list
           path: workflow_list.txt
+      - name: Determine active workflows
+        run: ./.github/scripts/filter_active_workflows.sh
+      - name: xxx
+        run: echo "${active_workflows[@]}"

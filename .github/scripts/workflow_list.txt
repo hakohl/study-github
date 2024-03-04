@@ -1,0 +1,14 @@
+exercise-cli-github	active	87866223
+GitHub-Actions-Demo	disabled_manually	63633678
+learn-actions-marketplace	disabled_manually	63728842
+Context-testing	disabled_manually	64094595
+learn-github-actions	disabled_manually	63641667
+.github/workflows/learn-github-script.yml	disabled_manually	69390847
+Greeting-on-variable-day	disabled_manually	64297023
+list-branches	disabled_manually	63759002
+list-repos-cli	active	87357839
+List-workflows-(GitHub CLI)	active	69394192
+List-workflows-(GitHub Script)	disabled_manually	69390848
+Node.js-CI	disabled_manually	68402434
+test-workflow	active	83824327
+understanding-github-actions	active	83510063

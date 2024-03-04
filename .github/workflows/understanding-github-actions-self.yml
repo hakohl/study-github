@@ -1,7 +1,7 @@
 # workflow for unserstanding Git
 
 name: understanding-github-actions
-run-name: ${{ github.actor }} learn about GitHub actions on a runner ${{ github. }}
+run-name: ${{ github.actor }} learn about GitHub actions on a runner ${{ github.runner }}
 on: push
 jobs:
   learn-job:
