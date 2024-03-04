@@ -22,9 +22,24 @@ jobs:
           path: workflow_list.txt
       - name: Determine active workflows
         run: |
-          bash ./.github/scripts/filter_active_workflows.sh
-          echo "${active_workflows[@]}" >> "$GITHUB_ENV"
+          cd ./.github/scripts || exit 1
+
+          active_workflows=()
+          #export "${active_workflows[@]}"
+
+          while read name state id; do
+              if [[ $name == "exercise-cli-github" ]]; then
+                  continue
+              elif [[ $state == "active" ]]; then
+                  active_workflows+=("$name")
+              else
+                  continue
+              fi
+          done < workflow_list.txt
+        #run: |
+          #bash ./.github/scripts/filter_active_workflows.sh
+          #echo "${active_workflows[@]}" >> "$GITHUB_ENV"
       - name: xxx
         #env:
           #ACTIVE_WORKFLOWS: ${active_workflows[@]}
-        run: echo "${active_workflows[@]}"
+        #run: echo "${active_workflows[@]}"
