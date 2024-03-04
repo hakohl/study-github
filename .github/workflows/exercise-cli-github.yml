@@ -36,6 +36,11 @@ jobs:
                   continue
               fi
           done < workflow_list.txt
+
+          echo "${active_workflows[@]}"
+      - name: List active workflows
+        run: |
+          echo xxx
         #run: |
           #bash ./.github/scripts/filter_active_workflows.sh
           #echo "${active_workflows[@]}" >> "$GITHUB_ENV"
