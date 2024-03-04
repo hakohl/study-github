@@ -34,12 +34,12 @@ jobs:
               fi
           done < workflow_list.txt
 
-          echo "(ACTIVE_WORKFLOWS)=${active_workflows[@]}" >> "$GITHUB_OUTPUT"
+          echo "ACTIVE_WORKFLOWS=${active_workflows[@]}" >> "$GITHUB_OUTPUT"
       - name: List active workflows
         run: |
           echo "${{ steps.determine-active-workflows.outputs.ACTIVE_WORKFLOWS }}"
           
-          for workflow in "${{ steps.determine-active-workflows.outputs.ACTIVE_WORKFLOWS }}"; do
+          for workflow in ( "${{ steps.determine-active-workflows.outputs.ACTIVE_WORKFLOWS }}" ); do
             echo $workflow
           done
 
