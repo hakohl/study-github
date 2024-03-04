@@ -41,7 +41,7 @@ jobs:
           
           read -a active_workflows <<< "${{ steps.determine-active-workflows.outputs.ACTIVE_WORKFLOWS }}"
 
-          for active_workflow in ${active_workflows[@]}"; do
+          for active_workflow in "${active_workflows[@]}"; do
             echo $active_workflow
           done
 
