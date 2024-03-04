@@ -21,8 +21,10 @@ jobs:
           name: workflow-list
           path: workflow_list.txt
       - name: Determine active workflows
-        run: bash ./.github/scripts/filter_active_workflows.sh
+        run: |
+          bash ./.github/scripts/filter_active_workflows.sh
+          echo "${active_workflows[@]}" >> "$GITHUB_ENV"
       - name: xxx
-        env:
-          ACTIVE_WORKFLOWS: ${active_workflows[@]}
-        run: echo "$ACTIVE_WORKFLOWS"
+        #env:
+          #ACTIVE_WORKFLOWS: ${active_workflows[@]}
+        run: echo "${active_workflows[@]}"
