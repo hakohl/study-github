@@ -22,7 +22,7 @@ jobs:
       - name: Disable active workflows
         run: |
           while read name state id; do
-              if [[ $name == "exercise-cli-github" ]]; then
+              if [[ $name == ${{ github.workflow }} ]]; then
                   continue
               elif [[ $state == "active" ]]; then
                   gh workflow disable $name
