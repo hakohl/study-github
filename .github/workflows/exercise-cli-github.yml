@@ -19,31 +19,18 @@ jobs:
         with:
           name: workflow-list
           path: workflow_list.txt
-      - name: Determine active workflows
-        id: determine-active-workflows
+      - name: Disable active workflows
         run: |
-          active_workflows=()
-
           while read name state id; do
               if [[ $name == "exercise-cli-github" ]]; then
                   continue
               elif [[ $state == "active" ]]; then
-                  active_workflows+=("$name")
+                  gh workflow disable $name
               else
                   continue
               fi
           done < workflow_list.txt
 
-          echo "ACTIVE_WORKFLOWS=${active_workflows[@]}" >> "$GITHUB_OUTPUT"
-      - name: Disable active workflows
-        run: |
-          #echo "${{ steps.determine-active-workflows.outputs.ACTIVE_WORKFLOWS }}"
-          
-          read -a active_workflows <<< "${{ steps.determine-active-workflows.outputs.ACTIVE_WORKFLOWS }}"
-
-          for active_workflow in "${active_workflows[@]}"; do
-            gh workflow disable $active_workflow
-          done
 
 
 
