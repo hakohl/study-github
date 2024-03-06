@@ -1,0 +1,131 @@
+# make some exercises using REST API of CLI
+
+name: exercise-rest-api-cli-github 
+
+on: workflow_dispatch
+env:
+  GH_TOKEN: ${{ github.token }}
+
+jobs:
+  exercises-with-workflows:
+    runs-on: ubuntu-latest
+    steps:
+      #- name: Checkout repository
+      #  uses: actions/checkout@v4
+      #- name: Determine workflow list
+      #  run: gh workflow list --all > workflow_list.txt
+      #- name: Upload workflow list file
+      #  uses: actions/upload-artifact@v4
+      #  with:
+      #    name: workflow-list
+      #    path: workflow_list.txt
+      - name: Disable active workflows
+        run: |
+          response=$(gh api \
+              -H "Accept: application/vnd.github+json" \
+              -H "X-GitHub-Api-Version: 2022-11-28" \
+              /repos/${{ github.repository_owner }}/${{ github.repository }}/actions/workflows)
+  
+          for workflow_id in $(echo "$response" | jq -cr '.workflows[] | select( .name != "${{ github.workflow }}" and .state == "active" ) | .id'); do
+              gh api \
+            --method PUT \
+            -H "Accept: application/vnd.github+json" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            /repos/${{ github.repository_owner }}/${{ github.repository }}/actions/workflows/"${workflow_id}"/disable
+          done
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

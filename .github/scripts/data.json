@@ -1,0 +1,173 @@
+{
+    "total_count": 14,
+    "workflows": [
+        {
+            "id": 87866223,
+            "node_id": "W_kwDOJzK9uc4FPLtv",
+            "name": "exercise-cli-github",
+            "path": ".github/workflows/exercise-cli-github.yml",
+            "state": "active",
+            "created_at": "2024-02-29T09:30:29.000+01:00",
+            "updated_at": "2024-03-04T10:35:55.000+01:00",
+            "url": "https://api.github.com/repos/hakohl/study-github/actions/workflows/87866223",
+            "html_url": "https://github.com/hakohl/study-github/blob/main/.github/workflows/exercise-cli-github.yml",
+            "badge_url": "https://github.com/hakohl/study-github/workflows/exercise-cli-github/badge.svg"
+        },
+        {
+            "id": 63633678,
+            "node_id": "W_kwDOJzK9uc4DyvkO",
+            "name": "GitHub-Actions-Demo",
+            "path": ".github/workflows/github-actions-demo.yml",
+            "state": "disabled_manually",
+            "created_at": "2023-07-19T15:04:07.000+02:00",
+            "updated_at": "2024-02-29T16:24:41.000+01:00",
+            "url": "https://api.github.com/repos/hakohl/study-github/actions/workflows/63633678",
+            "html_url": "https://github.com/hakohl/study-github/blob/main/.github/workflows/github-actions-demo.yml",
+            "badge_url": "https://github.com/hakohl/study-github/workflows/GitHub-Actions-Demo/badge.svg"
+        },
+        {
+            "id": 63728842,
+            "node_id": "W_kwDOJzK9uc4DzGzK",
+            "name": "learn-actions-marketplace",
+            "path": ".github/workflows/learn-actions-marketplace.yml",
+            "state": "disabled_manually",
+            "created_at": "2023-07-20T11:19:50.000+02:00",
+            "updated_at": "2024-01-24T13:23:54.000+01:00",
+            "url": "https://api.github.com/repos/hakohl/study-github/actions/workflows/63728842",
+            "html_url": "https://github.com/hakohl/study-github/blob/main/.github/workflows/learn-actions-marketplace.yml",
+            "badge_url": "https://github.com/hakohl/study-github/workflows/learn-actions-marketplace/badge.svg"
+        },
+        {
+            "id": 64094595,
+            "node_id": "W_kwDOJzK9uc4D0gGD",
+            "name": "Context-testing",
+            "path": ".github/workflows/learn-contexts.yml",
+            "state": "disabled_manually",
+            "created_at": "2023-07-24T15:03:35.000+02:00",
+            "updated_at": "2024-02-29T16:24:41.000+01:00",
+            "url": "https://api.github.com/repos/hakohl/study-github/actions/workflows/64094595",
+            "html_url": "https://github.com/hakohl/study-github/blob/main/.github/workflows/learn-contexts.yml",
+            "badge_url": "https://github.com/hakohl/study-github/workflows/Context-testing/badge.svg"
+        },
+        {
+            "id": 63641667,
+            "node_id": "W_kwDOJzK9uc4DyxhD",
+            "name": "learn-github-actions",
+            "path": ".github/workflows/learn-github-actions.yml",
+            "state": "disabled_manually",
+            "created_at": "2023-07-19T16:14:15.000+02:00",
+            "updated_at": "2024-01-24T13:22:41.000+01:00",
+            "url": "https://api.github.com/repos/hakohl/study-github/actions/workflows/63641667",
+            "html_url": "https://github.com/hakohl/study-github/blob/main/.github/workflows/learn-github-actions.yml",
+            "badge_url": "https://github.com/hakohl/study-github/workflows/learn-github-actions/badge.svg"
+        },
+        {
+            "id": 69390847,
+            "node_id": "W_kwDOJzK9uc4EItH_",
+            "name": ".github/workflows/learn-github-script.yml",
+            "path": ".github/workflows/learn-github-script.yml",
+            "state": "disabled_manually",
+            "created_at": "2023-09-14T15:57:56.000+02:00",
+            "updated_at": "2024-01-23T18:37:07.000+01:00",
+            "url": "https://api.github.com/repos/hakohl/study-github/actions/workflows/69390847",
+            "html_url": "https://github.com/hakohl/study-github/blob/main/.github/workflows/learn-github-script.yml",
+            "badge_url": "https://github.com/hakohl/study-github/workflows/.github/workflows/learn-github-script.yml/badge.svg"
+        },
+        {
+            "id": 64297023,
+            "node_id": "W_kwDOJzK9uc4D1Rg_",
+            "name": "Greeting-on-variable-day",
+            "path": ".github/workflows/learn-vars.yml",
+            "state": "disabled_manually",
+            "created_at": "2023-07-26T09:45:11.000+02:00",
+            "updated_at": "2024-02-29T16:24:41.000+01:00",
+            "url": "https://api.github.com/repos/hakohl/study-github/actions/workflows/64297023",
+            "html_url": "https://github.com/hakohl/study-github/blob/main/.github/workflows/learn-vars.yml",
+            "badge_url": "https://github.com/hakohl/study-github/workflows/Greeting-on-variable-day/badge.svg"
+        },
+        {
+            "id": 63759002,
+            "node_id": "W_kwDOJzK9uc4DzOKa",
+            "name": "list-branches",
+            "path": ".github/workflows/list-branches.yml",
+            "state": "disabled_manually",
+            "created_at": "2023-07-20T16:12:19.000+02:00",
+            "updated_at": "2024-01-23T18:34:23.000+01:00",
+            "url": "https://api.github.com/repos/hakohl/study-github/actions/workflows/63759002",
+            "html_url": "https://github.com/hakohl/study-github/blob/main/.github/workflows/list-branches.yml",
+            "badge_url": "https://github.com/hakohl/study-github/workflows/list-branches/badge.svg"
+        },
+        {
+            "id": 87357839,
+            "node_id": "W_kwDOJzK9uc4FNPmP",
+            "name": "list-repos-cli",
+            "path": ".github/workflows/list-repos-cli-github.yml",
+            "state": "disabled_manually",
+            "created_at": "2024-02-25T13:19:32.000+01:00",
+            "updated_at": "2024-03-05T13:36:44.000+01:00",
+            "url": "https://api.github.com/repos/hakohl/study-github/actions/workflows/87357839",
+            "html_url": "https://github.com/hakohl/study-github/blob/main/.github/workflows/list-repos-cli-github.yml",
+            "badge_url": "https://github.com/hakohl/study-github/workflows/list-repos-cli/badge.svg"
+        },
+        {
+            "id": 69394192,
+            "node_id": "W_kwDOJzK9uc4EIt8Q",
+            "name": "List-workflows-(GitHubCLI)",
+            "path": ".github/workflows/list-workflows-github-cli.yml",
+            "state": "disabled_manually",
+            "created_at": "2023-09-14T16:23:10.000+02:00",
+            "updated_at": "2024-03-05T11:01:39.000+01:00",
+            "url": "https://api.github.com/repos/hakohl/study-github/actions/workflows/69394192",
+            "html_url": "https://github.com/hakohl/study-github/blob/main/.github/workflows/list-workflows-github-cli.yml",
+            "badge_url": "https://github.com/hakohl/study-github/workflows/List-workflows-(GitHubCLI)/badge.svg"
+        },
+        {
+            "id": 69390848,
+            "node_id": "W_kwDOJzK9uc4EItIA",
+            "name": "List-workflows-(GitHubScript)",
+            "path": ".github/workflows/list-workflows-github-script.yml",
+            "state": "disabled_manually",
+            "created_at": "2023-09-14T15:57:56.000+02:00",
+            "updated_at": "2024-03-04T10:56:03.000+01:00",
+            "url": "https://api.github.com/repos/hakohl/study-github/actions/workflows/69390848",
+            "html_url": "https://github.com/hakohl/study-github/blob/main/.github/workflows/list-workflows-github-script.yml",
+            "badge_url": "https://github.com/hakohl/study-github/workflows/List-workflows-(GitHubScript)/badge.svg"
+        },
+        {
+            "id": 68402434,
+            "node_id": "W_kwDOJzK9uc4EE70C",
+            "name": "Node.js-CI",
+            "path": ".github/workflows/node.js.yml",
+            "state": "active",
+            "created_at": "2023-09-05T14:07:05.000+02:00",
+            "updated_at": "2024-03-05T17:33:47.000+01:00",
+            "url": "https://api.github.com/repos/hakohl/study-github/actions/workflows/68402434",
+            "html_url": "https://github.com/hakohl/study-github/blob/main/.github/workflows/node.js.yml",
+            "badge_url": "https://github.com/hakohl/study-github/workflows/Node.js-CI/badge.svg"
+        },
+        {
+            "id": 83824327,
+            "node_id": "W_kwDOJzK9uc4E_w7H",
+            "name": "test-workflow",
+            "path": ".github/workflows/test.yml",
+            "state": "active",
+            "created_at": "2024-01-26T17:08:13.000+01:00",
+            "updated_at": "2024-03-05T17:33:57.000+01:00",
+            "url": "https://api.github.com/repos/hakohl/study-github/actions/workflows/83824327",
+            "html_url": "https://github.com/hakohl/study-github/blob/main/.github/workflows/test.yml",
+            "badge_url": "https://github.com/hakohl/study-github/workflows/test-workflow/badge.svg"
+        },
+        {
+            "id": 83510063,
+            "node_id": "W_kwDOJzK9uc4E-kMv",
+            "name": "understanding-github-actions",
+            "path": ".github/workflows/understanding-github-actions-self.yml",
+            "state": "active",
+            "created_at": "2024-01-24T09:47:55.000+01:00",
+            "updated_at": "2024-03-05T17:35:47.000+01:00",
+            "url": "https://api.github.com/repos/hakohl/study-github/actions/workflows/83510063",
+            "html_url": "https://github.com/hakohl/study-github/blob/main/.github/workflows/understanding-github-actions-self.yml",
+            "badge_url": "https://github.com/hakohl/study-github/workflows/understanding-github-actions/badge.svg"
+        }
+    ]
+}
