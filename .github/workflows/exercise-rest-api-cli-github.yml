@@ -10,15 +10,6 @@ jobs:
   exercises-with-workflows:
     runs-on: ubuntu-latest
     steps:
-      #- name: Checkout repository
-      #  uses: actions/checkout@v4
-      #- name: Determine workflow list
-      #  run: gh workflow list --all > workflow_list.txt
-      #- name: Upload workflow list file
-      #  uses: actions/upload-artifact@v4
-      #  with:
-      #    name: workflow-list
-      #    path: workflow_list.txt
       - name: Disable active workflows
         run: |
           response=$(gh api \
