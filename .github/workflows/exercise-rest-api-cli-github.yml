@@ -21,14 +21,17 @@ jobs:
       #    path: workflow_list.txt
       - name: Disable active workflows
         run: |
-          response=$(gh api -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" repos/${{ github.repository_owner }}/${{ github.repository }}/actions/workflows)
+          response=$(gh api \
+              -H "Accept: application/vnd.github+json" \
+              -H "X-GitHub-Api-Version: 2022-11-28" \
+              /repos/${{ github.repository }}/actions/workflows)
   
           for workflow_id in $(echo "$response" | jq -cr '.workflows[] | select( .name != "${{ github.workflow }}" and .state == "active" ) | .id'); do
               gh api \
             --method PUT \
             -H "Accept: application/vnd.github+json" \
             -H "X-GitHub-Api-Version: 2022-11-28" \
-            repos/${{ github.repository_owner }}/${{ github.repository }}/actions/workflows/"${workflow_id}"/disable
+            /repos/${{ github.repository }}/actions/workflows/"${workflow_id}"/disable
           done
 
 
